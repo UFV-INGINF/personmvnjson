@@ -1,0 +1,16 @@
+{
+  "nombre": "Nacho",
+  "edad": 41,
+  "apellido": "Serrano",
+  "casado": true,
+  "hijas": [
+    {
+      "nombre": "hija1",
+      "edad": 7
+    },
+    {
+      "nombre": "hija2",
+      "edad": 3
+    }
+  ]
+}
