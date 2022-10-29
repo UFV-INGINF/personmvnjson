@@ -3,14 +3,26 @@ package com.ufv.dis;
 import java.util.ArrayList;
 
 public class Persona {
-    private String nombre;
+    private String Nombre;
     private String apellido;
     private boolean casado;
     private int edad;
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "Nombre='" + Nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", casado=" + casado +
+                ", edad=" + edad +
+                ", hijas=" + hijas +
+                '}';
+    }
+
     private ArrayList<Hija> hijas;
 
-    public Persona(String nombre, String apellido, boolean casado, int edad, ArrayList<Hija> hijas) {
-        this.nombre = nombre;
+    public Persona(String Nombre, String apellido, boolean casado, int edad, ArrayList<Hija> hijas) {
+        this.Nombre = Nombre;
         this.apellido = apellido;
         this.casado = casado;
         this.edad = edad;
@@ -21,11 +33,11 @@ public class Persona {
     }
 
     public String getNombre() {
-        return nombre;
+        return Nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
 
     public String getApellido() {

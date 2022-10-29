@@ -4,6 +4,14 @@ public class Hija {
     private String nombre;
     private int edad;
 
+    @Override
+    public String toString() {
+        return "{" +
+                "nombre:'" + nombre + '\'' +
+                ", edad:" + edad +
+                '}';
+    }
+
     public Hija(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
